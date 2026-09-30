@@ -1,0 +1,709 @@
+[
+  {
+    "id": "MB-01",
+    "name": "Dolce & Gabbana Silk Resort Camp Shirt & Shorts Set",
+    "category": "Knits & Polos",
+    "price": 70,
+    "badge": "Resort Capsule",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 185 cm (6'1\"), 80 kg, wearing Size Large",
+    "fit_scale": "Resort Relaxed: Fluid drape with tailored hem",
+    "fit_rating": 60,
+    "fabric_story": "100% Pure Mulberry Silk Twill. Ultra-lightweight fluid drape, Cuban camp collar, mother-of-pearl buttons, and hand-embroidered DG heraldic bullion crest patch on chest and left trouser pocket.",
+    "provenance": "Dolce & Gabbana Resort Edition • Atelier Marko Baku Verification",
+    "measurements": {
+      "M": {
+        "chest_cm": 108,
+        "length_cm": 71,
+        "shoulder_cm": 47,
+        "waist_cm": 78,
+        "inseam_cm": 20
+      },
+      "L": {
+        "chest_cm": 114,
+        "length_cm": 73,
+        "shoulder_cm": 49,
+        "waist_cm": 84,
+        "inseam_cm": 21
+      },
+      "XL": {
+        "chest_cm": 120,
+        "length_cm": 75,
+        "shoulder_cm": 51,
+        "waist_cm": 90,
+        "inseam_cm": 22
+      },
+      "XXL": {
+        "chest_cm": 126,
+        "length_cm": 77,
+        "shoulder_cm": 53,
+        "waist_cm": 96,
+        "inseam_cm": 23
+      },
+      "3XL": {
+        "chest_cm": 132,
+        "length_cm": 79,
+        "shoulder_cm": 55,
+        "waist_cm": 102,
+        "inseam_cm": 24
+      }
+    },
+    "styled_with": [
+      "MB-09",
+      "MB-06"
+    ],
+    "front_photo": "assets/MB-01_front.jpg",
+    "detail_photo": "assets/MB-01_detail.jpg",
+    "back_photo": "assets/MB-01_back.jpg",
+    "video_url": "assets/MB-01_walk.mp4"
+  },
+  {
+    "id": "MB-02",
+    "name": "EA7 Emporio Armani Piped Athletic Tracksuit",
+    "category": "Autumn/Winter Edit",
+    "price": 55,
+    "badge": "Runway Fit",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 184 cm (6'0\"), 78 kg, wearing Size Medium",
+    "fit_scale": "Sartorial Athletic: Ergonomic shoulder, tapered leg",
+    "fit_rating": 45,
+    "fabric_story": "320 GSM Double-Faced Technical Cotton-Poly Interlock. Clean matte jet black finish with engineered contrast white piping along the sleeves and pockets. High-recovery ribbing.",
+    "provenance": "Emporio Armani EA7 Activewear • Marko Baku Runway Drop",
+    "measurements": {
+      "M": {
+        "chest_cm": 104,
+        "length_cm": 70,
+        "shoulder_cm": 46,
+        "waist_cm": 76,
+        "inseam_cm": 75
+      },
+      "L": {
+        "chest_cm": 110,
+        "length_cm": 72,
+        "shoulder_cm": 48,
+        "waist_cm": 82,
+        "inseam_cm": 76
+      },
+      "XL": {
+        "chest_cm": 116,
+        "length_cm": 74,
+        "shoulder_cm": 50,
+        "waist_cm": 88,
+        "inseam_cm": 77
+      },
+      "XXL": {
+        "chest_cm": 122,
+        "length_cm": 76,
+        "shoulder_cm": 52,
+        "waist_cm": 94,
+        "inseam_cm": 78
+      },
+      "3XL": {
+        "chest_cm": 128,
+        "length_cm": 78,
+        "shoulder_cm": 54,
+        "waist_cm": 100,
+        "inseam_cm": 79
+      }
+    },
+    "styled_with": [
+      "MB-06",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-02_front.jpg",
+    "detail_photo": "assets/MB-02_detail.jpg",
+    "back_photo": "assets/MB-02_back.jpg",
+    "video_url": "assets/MB-02_walk.mp4"
+  },
+  {
+    "id": "MB-03",
+    "name": "Gucci GG Supreme Jacquard Knit Web-Collar Polo",
+    "category": "Knits & Polos",
+    "price": 65,
+    "badge": "Archival Monogram",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 182 cm (6'0\"), 77 kg, wearing Size Large",
+    "fit_scale": "Tailored Contemporary: Form-flattering chest, relaxed hem",
+    "fit_rating": 50,
+    "fabric_story": "100% Fine Mercerized Combed Cotton Jacquard. Engineered all-over GG diamond monogram weave accented with an ivory and crimson knitted web polo collar and mother-of-pearl button placket.",
+    "provenance": "Gucci Florence Archival Knit • Marko Baku Heritage Selection",
+    "measurements": {
+      "M": {
+        "chest_cm": 104,
+        "length_cm": 70,
+        "shoulder_cm": 45,
+        "sleeve_cm": 23
+      },
+      "L": {
+        "chest_cm": 110,
+        "length_cm": 72,
+        "shoulder_cm": 47,
+        "sleeve_cm": 24
+      },
+      "XL": {
+        "chest_cm": 116,
+        "length_cm": 74,
+        "shoulder_cm": 49,
+        "sleeve_cm": 25
+      },
+      "XXL": {
+        "chest_cm": 122,
+        "length_cm": 76,
+        "shoulder_cm": 51,
+        "sleeve_cm": 26
+      },
+      "3XL": {
+        "chest_cm": 128,
+        "length_cm": 78,
+        "shoulder_cm": 53,
+        "sleeve_cm": 27
+      }
+    },
+    "styled_with": [
+      "MB-11",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-03_front.jpg",
+    "detail_photo": "assets/MB-03_detail.jpg",
+    "back_photo": "assets/MB-03_back.jpg",
+    "video_url": "assets/MB-03_walk.mp4"
+  },
+  {
+    "id": "MB-04",
+    "name": "Moncler Tricolor Sleeve-Stripe Interlock Tracksuit",
+    "category": "Autumn/Winter Edit",
+    "price": 75,
+    "badge": "Alpine Sport",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 184 cm (6'0\"), 78 kg, wearing Size Medium",
+    "fit_scale": "Sartorial Athletic: Tapered ankle cuff, relaxed upper",
+    "fit_rating": 45,
+    "fabric_story": "340 GSM Compact Cotton-Elastane Interlock. Features Moncler's iconic red, white, and navy tricolor grosgrain tape along the outer sleeves and leg outseams, finished with the felted Moncler cockerel emblem.",
+    "provenance": "Moncler Grenoble Sport • Marko Baku Curated Drop",
+    "measurements": {
+      "M": {
+        "chest_cm": 106,
+        "length_cm": 71,
+        "shoulder_cm": 47,
+        "waist_cm": 78,
+        "inseam_cm": 76
+      },
+      "L": {
+        "chest_cm": 112,
+        "length_cm": 73,
+        "shoulder_cm": 49,
+        "waist_cm": 84,
+        "inseam_cm": 77
+      },
+      "XL": {
+        "chest_cm": 118,
+        "length_cm": 75,
+        "shoulder_cm": 51,
+        "waist_cm": 90,
+        "inseam_cm": 78
+      },
+      "XXL": {
+        "chest_cm": 124,
+        "length_cm": 77,
+        "shoulder_cm": 53,
+        "waist_cm": 96,
+        "inseam_cm": 79
+      },
+      "3XL": {
+        "chest_cm": 130,
+        "length_cm": 79,
+        "shoulder_cm": 55,
+        "waist_cm": 102,
+        "inseam_cm": 80
+      }
+    },
+    "styled_with": [
+      "MB-06",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-04_front.jpg",
+    "detail_photo": "assets/MB-04_detail.jpg",
+    "back_photo": "assets/MB-04_back.jpg",
+    "video_url": "assets/MB-04_walk.mp4"
+  },
+  {
+    "id": "MB-05",
+    "name": "Emporio Armani Gilded Eagle Athletic Tracksuit",
+    "category": "Autumn/Winter Edit",
+    "price": 65,
+    "badge": "Milano Capsule",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 184 cm (6'0\"), 78 kg, wearing Size Medium",
+    "fit_scale": "Sartorial Athletic: Streamlined torso with articulated leg cut",
+    "fit_rating": 45,
+    "fabric_story": "Premium double-combed stretch cotton jersey. Accented with foil-stamped metallic gold Emporio Armani lettering across the lower torso and left thigh, with elasticated waistband and internal drawcord.",
+    "provenance": "Emporio Armani Milano • Baku Showroom Showcase",
+    "measurements": {
+      "M": {
+        "chest_cm": 104,
+        "length_cm": 70,
+        "shoulder_cm": 46,
+        "waist_cm": 76,
+        "inseam_cm": 75
+      },
+      "L": {
+        "chest_cm": 110,
+        "length_cm": 72,
+        "shoulder_cm": 48,
+        "waist_cm": 82,
+        "inseam_cm": 76
+      },
+      "XL": {
+        "chest_cm": 116,
+        "length_cm": 74,
+        "shoulder_cm": 50,
+        "waist_cm": 88,
+        "inseam_cm": 77
+      },
+      "XXL": {
+        "chest_cm": 122,
+        "length_cm": 76,
+        "shoulder_cm": 52,
+        "waist_cm": 94,
+        "inseam_cm": 78
+      },
+      "3XL": {
+        "chest_cm": 128,
+        "length_cm": 78,
+        "shoulder_cm": 54,
+        "waist_cm": 100,
+        "inseam_cm": 79
+      }
+    },
+    "styled_with": [
+      "MB-06",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-05_front.jpg",
+    "detail_photo": "assets/MB-05_detail.jpg",
+    "back_photo": "assets/MB-05_back.jpg",
+    "video_url": "assets/MB-05_walk.mp4"
+  },
+  {
+    "id": "MB-06",
+    "name": "Gucci GG Supreme Monogram Canvas Baseball Cap",
+    "category": "Accessories & Headwear",
+    "price": 35,
+    "badge": "Iconic Headwear",
+    "sizes": [
+      "S/M",
+      "L/XL"
+    ],
+    "model_telemetry": "Adjustable rear leather tab accommodates 56 cm to 61 cm head circumference",
+    "fit_scale": "Structured Crown: Classic six-panel baseball profile",
+    "fit_rating": 50,
+    "fabric_story": "GG Supreme Monogram Canvas with Italian calfskin trim. Rigid curved visor with contrast saddle stitching, breathable mesh lining, and adjustable rear hook-and-loop leather closure.",
+    "provenance": "Gucci Accessory Division • Marko Baku VIP Vault",
+    "measurements": {
+      "S/M": {
+        "circumference_cm": 57,
+        "brim_cm": 7.5,
+        "depth_cm": 16
+      },
+      "L/XL": {
+        "circumference_cm": 60,
+        "brim_cm": 7.5,
+        "depth_cm": 17
+      }
+    },
+    "styled_with": [
+      "MB-02",
+      "MB-04",
+      "MB-05"
+    ],
+    "front_photo": "assets/MB-06_front.jpg",
+    "detail_photo": "assets/MB-06_detail.jpg",
+    "back_photo": "assets/MB-06_back.jpg",
+    "video_url": "assets/MB-06_walk.mp4"
+  },
+  {
+    "id": "MB-07",
+    "name": "Gucci Interlocking GG Web Stripe Crewneck Sweaters",
+    "category": "Knits & Polos",
+    "price": 60,
+    "badge": "Showroom Featured",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Showroom models 180–186 cm wear Size Large for effortless drape",
+    "fit_scale": "Relaxed Contemporary: Dropped shoulder, ribbed cuffs",
+    "fit_rating": 55,
+    "fabric_story": "Medium-weight 100% fine cotton knit available in Alabaster White and Onyx Black. Featuring Gucci's bold chest web stripe intarsia with embroidered interlocking GG monogram.",
+    "provenance": "Gucci Knitwear Archive • Baku Showroom Display",
+    "measurements": {
+      "M": {
+        "chest_cm": 110,
+        "length_cm": 69,
+        "shoulder_cm": 48,
+        "sleeve_cm": 62
+      },
+      "L": {
+        "chest_cm": 116,
+        "length_cm": 71,
+        "shoulder_cm": 50,
+        "sleeve_cm": 63
+      },
+      "XL": {
+        "chest_cm": 122,
+        "length_cm": 73,
+        "shoulder_cm": 52,
+        "sleeve_cm": 64
+      },
+      "XXL": {
+        "chest_cm": 128,
+        "length_cm": 75,
+        "shoulder_cm": 54,
+        "sleeve_cm": 65
+      },
+      "3XL": {
+        "chest_cm": 134,
+        "length_cm": 77,
+        "shoulder_cm": 56,
+        "sleeve_cm": 66
+      }
+    },
+    "styled_with": [
+      "MB-08",
+      "MB-11",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-07_front.jpg",
+    "detail_photo": "assets/MB-07_detail.jpg",
+    "back_photo": "assets/MB-07_back.jpg",
+    "video_url": "assets/MB-07_walk.mp4"
+  },
+  {
+    "id": "MB-08",
+    "name": "Christian Dior Oblique Jacquard Pocket Slim-Fit Jeans",
+    "category": "Denim & Trousers",
+    "price": 50,
+    "badge": "Dior Oblique",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "model_telemetry": "Model is 182 cm (6'0\"), wearing Waist 32 / Length 32",
+    "fit_scale": "Slim Straight: Structured thigh, slight taper below knee",
+    "fit_rating": 40,
+    "fabric_story": "12.5oz Washed Stretch Cotton Denim. Hand-distressed whiskering with micro-abrasions, paired with the iconic Christian Dior Oblique woven canvas insert lining the right coin pocket. Custom engraved Dior silver rivets.",
+    "provenance": "Christian Dior Homme • Marko Baku Autumn Selection",
+    "measurements": {
+      "30": {
+        "waist_cm": 78,
+        "hip_cm": 98,
+        "inseam_cm": 81,
+        "thigh_cm": 29
+      },
+      "32": {
+        "waist_cm": 83,
+        "hip_cm": 103,
+        "inseam_cm": 82,
+        "thigh_cm": 30.5
+      },
+      "34": {
+        "waist_cm": 88,
+        "hip_cm": 108,
+        "inseam_cm": 83,
+        "thigh_cm": 32
+      },
+      "36": {
+        "waist_cm": 93,
+        "hip_cm": 113,
+        "inseam_cm": 84,
+        "thigh_cm": 33.5
+      },
+      "38": {
+        "waist_cm": 98,
+        "hip_cm": 118,
+        "inseam_cm": 85,
+        "thigh_cm": 35
+      }
+    },
+    "styled_with": [
+      "MB-03",
+      "MB-07",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-08_front.jpg",
+    "detail_photo": "assets/MB-08_detail.jpg",
+    "back_photo": "assets/MB-08_back.jpg",
+    "video_url": null
+  },
+  {
+    "id": "MB-09",
+    "name": "Loro Piana Summer Walk Water-Repellent Suede Loafers",
+    "category": "Luxury Footwear",
+    "price": 65,
+    "badge": "Hand-Finished",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "model_telemetry": "True to European luxury sizing. Take your standard dress shoe size.",
+    "fit_scale": "Unlined Slipper: Glove-like mold to foot contours",
+    "fit_rating": 50,
+    "fabric_story": "100% Unlined Calf Suede treated with Loro Piana's proprietary water-repellent and stain-resistant finish. Built on a flexible non-slip off-white latex rubber sole with white saddle piping and palladium mini padlock charms.",
+    "provenance": "Loro Piana Summer Walk Series • Complete Box & Certificate Suite",
+    "measurements": {
+      "40": {
+        "insole_cm": 26.2,
+        "width_cm": 9.4
+      },
+      "41": {
+        "insole_cm": 26.8,
+        "width_cm": 9.6
+      },
+      "42": {
+        "insole_cm": 27.5,
+        "width_cm": 9.8
+      },
+      "43": {
+        "insole_cm": 28.2,
+        "width_cm": 10.0
+      },
+      "44": {
+        "insole_cm": 28.8,
+        "width_cm": 10.2
+      },
+      "45": {
+        "insole_cm": 29.5,
+        "width_cm": 10.4
+      }
+    },
+    "styled_with": [
+      "MB-01",
+      "MB-03",
+      "MB-08"
+    ],
+    "front_photo": "assets/MB-09_front.jpg",
+    "detail_photo": "assets/MB-09_detail.jpg",
+    "back_photo": "assets/MB-09_back.jpg",
+    "video_url": null
+  },
+  {
+    "id": "MB-10",
+    "name": "Dolce & Gabbana Milano Metallic Plaque Heavy Fleece Hoodie",
+    "category": "Autumn/Winter Edit",
+    "price": 60,
+    "badge": "Milano Heritage",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 185 cm (6'1\"), 82 kg, wearing Size Large",
+    "fit_scale": "Contemporary Oversized: Structured boxy torso, relaxed drape",
+    "fit_rating": 65,
+    "fabric_story": "460 GSM Heavyweight Organic French Terry. Deep jet black dye with polished ruthenium-finish Dolce & Gabbana Milano Italia engraved metal crest plaque hand-riveted onto the front kangaroo pocket.",
+    "provenance": "Dolce & Gabbana Milano • Marko Baku Heavy Fleece Drop",
+    "measurements": {
+      "M": {
+        "chest_cm": 114,
+        "length_cm": 70,
+        "shoulder_cm": 52,
+        "sleeve_cm": 63
+      },
+      "L": {
+        "chest_cm": 120,
+        "length_cm": 72,
+        "shoulder_cm": 54,
+        "sleeve_cm": 64
+      },
+      "XL": {
+        "chest_cm": 126,
+        "length_cm": 74,
+        "shoulder_cm": 56,
+        "sleeve_cm": 65
+      },
+      "XXL": {
+        "chest_cm": 132,
+        "length_cm": 76,
+        "shoulder_cm": 58,
+        "sleeve_cm": 66
+      },
+      "3XL": {
+        "chest_cm": 138,
+        "length_cm": 78,
+        "shoulder_cm": 60,
+        "sleeve_cm": 67
+      }
+    },
+    "styled_with": [
+      "MB-08",
+      "MB-11",
+      "MB-06"
+    ],
+    "front_photo": "assets/MB-10_front.jpg",
+    "detail_photo": "assets/MB-10_detail.jpg",
+    "back_photo": "assets/MB-10_back.jpg",
+    "video_url": "assets/MB-10_walk.mp4"
+  },
+  {
+    "id": "MB-11",
+    "name": "Louis Vuitton Monogram Light-Wash Selvedge Denim",
+    "category": "Denim & Trousers",
+    "price": 50,
+    "badge": "Artisanal Denim",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "model_telemetry": "Model is 184 cm (6'0\"), wearing Waist 32 / Length 32",
+    "fit_scale": "Straight Leg: Sits naturally on waist, relaxed thigh",
+    "fit_rating": 50,
+    "fabric_story": "13.5oz Ring-Spun Japanese Cotton Denim in an artisanal vintage sky-blue wash with subtle fading. Hand-finished with Louis Vuitton monogram printed rear pocket lining and embossed yellow leather waistband patch.",
+    "provenance": "Louis Vuitton Denim Workshop • Marko Baku Sovereign Stock",
+    "measurements": {
+      "30": {
+        "waist_cm": 78,
+        "hip_cm": 98,
+        "inseam_cm": 81,
+        "thigh_cm": 29
+      },
+      "32": {
+        "waist_cm": 83,
+        "hip_cm": 103,
+        "inseam_cm": 82,
+        "thigh_cm": 30.5
+      },
+      "34": {
+        "waist_cm": 88,
+        "hip_cm": 108,
+        "inseam_cm": 83,
+        "thigh_cm": 32
+      },
+      "36": {
+        "waist_cm": 93,
+        "hip_cm": 113,
+        "inseam_cm": 84,
+        "thigh_cm": 33.5
+      },
+      "38": {
+        "waist_cm": 98,
+        "hip_cm": 118,
+        "inseam_cm": 85,
+        "thigh_cm": 35
+      }
+    },
+    "styled_with": [
+      "MB-01",
+      "MB-03",
+      "MB-10"
+    ],
+    "front_photo": "assets/MB-11_front.jpg",
+    "detail_photo": "assets/MB-11_detail.jpg",
+    "back_photo": "assets/MB-11_back.jpg",
+    "video_url": "assets/MB-11_walk.mp4"
+  },
+  {
+    "id": "MB-12",
+    "name": "Philipp Plein Lambskin-Collar Wool Zip Blouson",
+    "category": "Autumn/Winter Edit",
+    "price": 90,
+    "badge": "Atelier Craft",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "model_telemetry": "Model is 185 cm (6'1\"), 80 kg, wearing Size Large",
+    "fit_scale": "Sartorial Bomber: Structured shoulder, rib-trimmed waist",
+    "fit_rating": 50,
+    "fabric_story": "Dense virgin wool-blend body paired with genuine Italian lambskin leather spread collar and dual flapped cargo pockets. Silver-tone heavy-gauge two-way zipper and hexagonal PP chest crest.",
+    "provenance": "Philipp Plein Couture • Atelier Baku Flagship Showcase",
+    "measurements": {
+      "M": {
+        "chest_cm": 108,
+        "length_cm": 67,
+        "shoulder_cm": 47,
+        "sleeve_cm": 63
+      },
+      "L": {
+        "chest_cm": 114,
+        "length_cm": 69,
+        "shoulder_cm": 49,
+        "sleeve_cm": 64
+      },
+      "XL": {
+        "chest_cm": 120,
+        "length_cm": 71,
+        "shoulder_cm": 51,
+        "sleeve_cm": 65
+      },
+      "XXL": {
+        "chest_cm": 126,
+        "length_cm": 73,
+        "shoulder_cm": 53,
+        "sleeve_cm": 66
+      },
+      "3XL": {
+        "chest_cm": 132,
+        "length_cm": 75,
+        "shoulder_cm": 55,
+        "sleeve_cm": 67
+      }
+    },
+    "styled_with": [
+      "MB-08",
+      "MB-11",
+      "MB-09"
+    ],
+    "front_photo": "assets/MB-12_front.jpg",
+    "detail_photo": "assets/MB-12_detail.jpg",
+    "back_photo": "assets/MB-12_back.jpg",
+    "video_url": null
+  }
+]

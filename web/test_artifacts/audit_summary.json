@@ -1,0 +1,269 @@
+{
+  "nav_consistency": {
+    "index.html": {
+      "found": [
+        "Home",
+        "Full Catalog",
+        "Runway Lookbook",
+        "Virtual Pavilion",
+        "Global Proof",
+        "The Atelier Difference"
+      ],
+      "pass": true
+    },
+    "collections.html": {
+      "found": [
+        "Home",
+        "Full Catalog",
+        "Runway Lookbook",
+        "Virtual Pavilion",
+        "Global Proof",
+        "The Atelier Difference"
+      ],
+      "pass": true
+    },
+    "lookbook.html": {
+      "found": [
+        "Home",
+        "Full Catalog",
+        "Runway Lookbook",
+        "Virtual Pavilion",
+        "Global Proof",
+        "The Atelier Difference"
+      ],
+      "pass": true
+    },
+    "pavilion.html": {
+      "found": [
+        "Home",
+        "Full Catalog",
+        "Runway Lookbook",
+        "Virtual Pavilion",
+        "Global Proof",
+        "The Atelier Difference"
+      ],
+      "pass": true
+    }
+  },
+  "footer_consistency": {
+    "index.html": {
+      "columns": 4,
+      "links_count": 12,
+      "has_copyright": true,
+      "pass": true
+    },
+    "pavilion.html": {
+      "columns": 4,
+      "has_copyright": true,
+      "pass": true
+    }
+  },
+  "category_tabs": {
+    "all": {
+      "button_text": "ALL EDITIONS (12)",
+      "rendered_cards": 12,
+      "expected": 12,
+      "pass": true
+    },
+    "knits": {
+      "button_text": "KNITS & POLOS (3)",
+      "rendered_cards": 3,
+      "expected": 3,
+      "pass": true
+    },
+    "tailoring": {
+      "button_text": "TAILORING & OUTERWEAR (5)",
+      "rendered_cards": 5,
+      "expected": 5,
+      "pass": true
+    },
+    "denim": {
+      "button_text": "DENIM & TROUSERS (2)",
+      "rendered_cards": 2,
+      "expected": 2,
+      "pass": true
+    },
+    "footwear": {
+      "button_text": "LUXURY FOOTWEAR (1)",
+      "rendered_cards": 1,
+      "expected": 1,
+      "pass": true
+    },
+    "accessories": {
+      "button_text": "ACCESSORIES & HEADWEAR (1)",
+      "rendered_cards": 1,
+      "expected": 1,
+      "pass": true
+    }
+  },
+  "category_urls": {
+    "knits": {
+      "url": "http://localhost:8090/collections.html?cat=knits",
+      "active_tab": "KNITS & POLOS (3)",
+      "rendered_cards": 3,
+      "expected": 3,
+      "pass": true
+    },
+    "tailoring": {
+      "url": "http://localhost:8090/collections.html?cat=tailoring",
+      "active_tab": "TAILORING & OUTERWEAR (5)",
+      "rendered_cards": 5,
+      "expected": 5,
+      "pass": true
+    },
+    "denim": {
+      "url": "http://localhost:8090/collections.html?cat=denim",
+      "active_tab": "DENIM & TROUSERS (2)",
+      "rendered_cards": 2,
+      "expected": 2,
+      "pass": true
+    },
+    "footwear": {
+      "url": "http://localhost:8090/collections.html?cat=footwear",
+      "active_tab": "LUXURY FOOTWEAR (1)",
+      "rendered_cards": 1,
+      "expected": 1,
+      "pass": true
+    },
+    "accessories": {
+      "url": "http://localhost:8090/collections.html?cat=accessories",
+      "active_tab": "ACCESSORIES & HEADWEAR (1)",
+      "rendered_cards": 1,
+      "expected": 1,
+      "pass": true
+    }
+  },
+  "density_toggle": {
+    "editorial_switch": true,
+    "compact_switch": true,
+    "pass": true
+  },
+  "currency_switching": {
+    "sample_USD": "$70",
+    "sample_EUR": "\u20ac64",
+    "sample_GBP": "\u00a355",
+    "sample_AZN": "\u20bc119",
+    "pass": true
+  },
+  "cart_and_checkout": {
+    "drawer_opened": true,
+    "items_rendered": 1,
+    "subtotal": "$70",
+    "checkout_modal_opened": true,
+    "tracking_generated": "AZ-CARGO-353284",
+    "pass": true
+  },
+  "lookbook_integrity": {
+    "item_count": 9,
+    "video_count": 9,
+    "inspect_links": 9,
+    "pass": true
+  },
+  "product_measurements": {
+    "MB-01": {
+      "name": "Dolce & Gabbana Silk Resort Camp Shirt & Shorts Set",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 5,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 2,
+      "pass": true
+    },
+    "MB-02": {
+      "name": "EA7 Emporio Armani Piped Athletic Tracksuit",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 5,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 2,
+      "pass": true
+    },
+    "MB-03": {
+      "name": "Gucci GG Supreme Jacquard Knit Web-Collar Polo",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 4,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 2,
+      "pass": true
+    },
+    "MB-06": {
+      "name": "Gucci GG Supreme Monogram Canvas Baseball Cap",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 3,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 3,
+      "pass": true
+    },
+    "MB-08": {
+      "name": "Christian Dior Oblique Jacquard Pocket Slim-Fit Jeans",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 4,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 3,
+      "pass": true
+    },
+    "MB-09": {
+      "name": "Loro Piana Summer Walk Water-Repellent Suede Loafers",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 2,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 3,
+      "pass": true
+    },
+    "MB-12": {
+      "name": "Philipp Plein Lambskin-Collar Wool Zip Blouson",
+      "nav_match": true,
+      "title_match": true,
+      "breadcrumb_pass": true,
+      "cm_metrics": 4,
+      "unit_toggle_pass": true,
+      "size_switch_pass": true,
+      "styled_with_rendered": 3,
+      "pass": true
+    }
+  },
+  "pavilion_integrity": {
+    "nav_match": true,
+    "footer_pass": true,
+    "canvas_visible": true,
+    "editorial_preset_pass": true,
+    "athletic_preset_pass": true,
+    "fendi_preset_pass": true,
+    "master_preset_pass": true,
+    "ensemble_cart_pass": true,
+    "pass": true
+  },
+  "screenshots": [
+    "audit_index.png",
+    "audit_collections.png",
+    "audit_lookbook.png",
+    "audit_pdp_MB-01.png",
+    "audit_pdp_MB-02.png",
+    "audit_pdp_MB-03.png",
+    "audit_pdp_MB-06.png",
+    "audit_pdp_MB-08.png",
+    "audit_pdp_MB-09.png",
+    "audit_pdp_MB-12.png",
+    "audit_pavilion_scanner.png",
+    "audit_pavilion.png",
+    "audit_pavilion_fullpage.png"
+  ],
+  "overall_pass": true,
+  "console_errors": []
+}

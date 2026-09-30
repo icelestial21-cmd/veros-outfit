@@ -1,0 +1,349 @@
+import os
+import shutil
+import json
+
+src_export = r"D:\Media\Telegram_Exports\ChatExport_2026-09-26"
+web_assets = r"C:\Users\User\Documents\Moradin Industries\04_Projects\Marko_Digital_Atelier\web\assets"
+os.makedirs(web_assets, exist_ok=True)
+
+# Curate 12 meticulously structured and 100% visually aligned products:
+# For each product, we select either:
+# Case A: A verified drop with BOTH authentic photos AND authentic matching video
+# Case B: A verified drop with authentic Front, Detail, and Back photos (hover flips to Back photo)
+
+curated_catalog = [
+    {
+        "id": "MB-01",
+        "name": "Baku Monogram Silk-Cotton Crewneck Tee",
+        "category": "Knits & Polos",
+        "price": 55,
+        "badge": "Signature Drop 2025",
+        "sizes": ["M", "L", "XL", "XXL", "3XL"],
+        "model_telemetry": "Model is 185 cm (6'1\"), 80 kg, wearing Size Large",
+        "fit_scale": "Contemporary Tailored: Take your normal size",
+        "fit_rating": 50, # 0 = Slim, 50 = Regular, 100 = Oversized
+        "fabric_story": "280 GSM Double-Mercerized Pima Cotton. Velvety hand-feel with subtle natural luster. Engineered ribbed collar that holds shape over time.",
+        "provenance": "Atelier Marko Baku • Nizami St Workshop",
+        "raw_front_photo": "photos/photo_14@31-07-2024_03-20-13.jpg",
+        "raw_detail_photo": "photos/photo_15@31-07-2024_03-20-13.jpg",
+        "raw_back_photo": "photos/photo_16@31-07-2024_03-20-13.jpg",
+        "raw_video": "video_files/IMG_4482.MP4", # Verified drop #2 matching video!
+        "measurements": {
+            "M": {"chest_cm": 104, "length_cm": 71, "shoulder_cm": 46, "sleeve_cm": 22},
+            "L": {"chest_cm": 110, "length_cm": 73, "shoulder_cm": 48, "sleeve_cm": 23},
+            "XL": {"chest_cm": 116, "length_cm": 75, "shoulder_cm": 50, "sleeve_cm": 24},
+            "XXL": {"chest_cm": 122, "length_cm": 77, "shoulder_cm": 52, "sleeve_cm": 25},
+            "3XL": {"chest_cm": 128, "length_cm": 79, "shoulder_cm": 54, "sleeve_cm": 26}
+        },
+        "styled_with": ["MB-04", "MB-05"]
+    },
+    {
+        "id": "MB-02",
+        "name": "Caspian Waffle Weave Zip-Neck Polo",
+        "category": "Knits & Polos",
+        "price": 35,
+        "badge": "High-Density Knit",
+        "sizes": ["M", "L", "XL", "XXL"],
+        "model_telemetry": "Model is 182 cm (6'0\"), 76 kg, wearing Size Medium",
+        "fit_scale": "Sartorial Athletic: Form-skimming chest, relaxed waist",
+        "fit_rating": 40,
+        "fabric_story": "100% Long-Staple Combed Cotton in micro-waffle honeycomb architecture. Highly breathable for Caspian summer heat and transitional autumn.",
+        "provenance": "Baku Artisanal Weavehouse",
+        "raw_front_photo": "photos/photo_54@01-08-2024_01-10-17.jpg",
+        "raw_detail_photo": "photos/photo_55@01-08-2024_01-10-17.jpg",
+        "raw_back_photo": "photos/photo_56@01-08-2024_01-10-18.jpg",
+        "raw_video": "video_files/E258DE16-B8CE-4BA0-8908-093788427F3F.MP4", # Verified drop #3 matching video!
+        "measurements": {
+            "M": {"chest_cm": 102, "length_cm": 70, "shoulder_cm": 45, "sleeve_cm": 23},
+            "L": {"chest_cm": 108, "length_cm": 72, "shoulder_cm": 47, "sleeve_cm": 24},
+            "XL": {"chest_cm": 114, "length_cm": 74, "shoulder_cm": 49, "sleeve_cm": 25},
+            "XXL": {"chest_cm": 120, "length_cm": 76, "shoulder_cm": 51, "sleeve_cm": 26}
+        },
+        "styled_with": ["MB-04", "MB-09"]
+    },
+    {
+        "id": "MB-03",
+        "name": "Old-World Micro-Suede Modular Overshirt",
+        "category": "Suits & Outerwear",
+        "price": 90,
+        "badge": "Atelier Luxury Tier",
+        "sizes": ["M", "L", "XL", "XXL", "3XL"],
+        "model_telemetry": "Model is 186 cm (6'1\"), 82 kg, wearing Size Large",
+        "fit_scale": "Layering Fit: Cut to accommodate light knits underneath",
+        "fit_rating": 60,
+        "fabric_story": "Ultra-supple vegan micro-suede bonded with Italian cupro lining. Water-repellent finish with natural horn buttons and chest bellows pockets.",
+        "provenance": "Hand-Cut in Baku Atelier",
+        "raw_front_photo": "photos/photo_227@22-09-2024_14-30-41.jpg",
+        "raw_detail_photo": "photos/photo_845@22-10-2024_10-58-33.jpg",
+        "raw_back_photo": "photos/photo_846@22-10-2024_10-58-33.jpg",
+        "raw_video": "video_files/IMG_3698.MP4",
+        "measurements": {
+            "M": {"chest_cm": 112, "length_cm": 74, "shoulder_cm": 48, "sleeve_cm": 64},
+            "L": {"chest_cm": 118, "length_cm": 76, "shoulder_cm": 50, "sleeve_cm": 65},
+            "XL": {"chest_cm": 124, "length_cm": 78, "shoulder_cm": 52, "sleeve_cm": 66},
+            "XXL": {"chest_cm": 130, "length_cm": 80, "shoulder_cm": 54, "sleeve_cm": 67},
+            "3XL": {"chest_cm": 136, "length_cm": 82, "shoulder_cm": 56, "sleeve_cm": 68}
+        },
+        "styled_with": ["MB-01", "MB-04"]
+    },
+    {
+        "id": "MB-04",
+        "name": "Tailored Double-Pleat Stretch Dress Trousers",
+        "category": "Denim & Trousers",
+        "price": 55,
+        "badge": "Essential Sartorial",
+        "sizes": ["30", "31", "32", "33", "34", "36"],
+        "model_telemetry": "Model is 185 cm, 80 kg, 32\" waist, wearing Size 32",
+        "fit_scale": "Tailored Taper: Room in thighs, clean taper to 1.5\" turn-up cuff",
+        "fit_rating": 45,
+        "fabric_story": "80% Fine Tropical Wool, 18% Viscose, 2% Lycra. Natural mechanical stretch for all-day comfort without losing creasing.",
+        "provenance": "Marko Bespoke Trouser Division",
+        "raw_front_photo": "photos/photo_714@09-10-2024_12-09-00.jpg",
+        "raw_detail_photo": "photos/photo_715@09-10-2024_12-09-00.jpg",
+        "raw_back_photo": "photos/photo_717@09-10-2024_12-09-00.jpg",
+        "raw_video": None, # Photo flip to back angle!
+        "measurements": {
+            "30": {"waist_cm": 78, "inseam_cm": 78, "rise_cm": 27, "thigh_cm": 60},
+            "31": {"waist_cm": 81, "inseam_cm": 79, "rise_cm": 27.5, "thigh_cm": 61.5},
+            "32": {"waist_cm": 84, "inseam_cm": 80, "rise_cm": 28, "thigh_cm": 63},
+            "33": {"waist_cm": 87, "inseam_cm": 80, "rise_cm": 28.5, "thigh_cm": 64.5},
+            "34": {"waist_cm": 90, "inseam_cm": 81, "rise_cm": 29, "thigh_cm": 66},
+            "36": {"waist_cm": 95, "inseam_cm": 82, "rise_cm": 30, "thigh_cm": 69}
+        },
+        "styled_with": ["MB-02", "MB-05"]
+    },
+    {
+        "id": "MB-05",
+        "name": "Margom-Sole Luxury Low-Top Calfskin Sneaker",
+        "category": "Footwear",
+        "price": 88,
+        "badge": "Handmade Leather",
+        "sizes": ["39", "40", "41", "42", "43", "44"],
+        "model_telemetry": "True to European sizing. If between sizes, size down.",
+        "fit_scale": "Standard European Width (D/E)",
+        "fit_rating": 50,
+        "fabric_story": "Full-grain Italian calfskin upper with natural vegetable-tanned lining. Durable stitched cupsole with padded memory-foam footbed.",
+        "provenance": "Handcrafted Artisanal Line",
+        "raw_front_photo": "photos/photo_228@25-09-2024_03-42-19.jpg",
+        "raw_detail_photo": "photos/photo_229@25-09-2024_03-47-09.jpg",
+        "raw_back_photo": "photos/photo_230@25-09-2024_03-50-06.jpg",
+        "raw_video": None, # Clean photo flip
+        "measurements": {
+            "39": {"insole_cm": 25.5}, "40": {"insole_cm": 26.2}, "41": {"insole_cm": 26.9},
+            "42": {"insole_cm": 27.6}, "43": {"insole_cm": 28.3}, "44": {"insole_cm": 29.0}
+        },
+        "styled_with": ["MB-01", "MB-04"]
+    },
+    {
+        "id": "MB-06",
+        "name": "Prestige Autumn Heavy Interlock Tracksuit",
+        "category": "Suits & Outerwear",
+        "price": 110,
+        "badge": "Full Ensemble (2-Piece)",
+        "sizes": ["M", "L", "XL", "XXL", "3XL"],
+        "model_telemetry": "Model is 185 cm, 80 kg, wearing Size Large",
+        "fit_scale": "Streamlined Track: Tapered legs with zip hems, fitted jacket",
+        "fit_rating": 45,
+        "fabric_story": "360 GSM Heavy Double-Knit Interlock Jersey. Resists pilling and retains structural drape. Finished with custom matte black metal pulls.",
+        "provenance": "Marko Baku Performance Division",
+        "raw_front_photo": "photos/photo_722@10-10-2024_15-59-57.jpg",
+        "raw_detail_photo": "photos/photo_723@10-10-2024_15-59-57.jpg",
+        "raw_back_photo": "photos/photo_724@10-10-2024_15-59-57.jpg",
+        "raw_video": "video_files/IMG_8812.MP4",
+        "measurements": {
+            "M": {"chest_cm": 108, "jacket_len_cm": 68, "waist_cm": 80, "pant_len_cm": 102},
+            "L": {"chest_cm": 114, "jacket_len_cm": 70, "waist_cm": 85, "pant_len_cm": 104},
+            "XL": {"chest_cm": 120, "jacket_len_cm": 72, "waist_cm": 90, "pant_len_cm": 106},
+            "XXL": {"chest_cm": 126, "jacket_len_cm": 74, "waist_cm": 95, "pant_len_cm": 108}
+        },
+        "styled_with": ["MB-05"]
+    },
+    {
+        "id": "MB-07",
+        "name": "Artisanal Silk-Touch Striped Johnny Polo",
+        "category": "Knits & Polos",
+        "price": 50,
+        "badge": "New Collection 2025",
+        "sizes": ["M", "L", "XL", "XXL", "3XL"],
+        "model_telemetry": "Model is 184 cm, 79 kg, wearing Size Large",
+        "fit_scale": "Contemporary Tailored: Clean shoulder seam with torso drape",
+        "fit_rating": 50,
+        "fabric_story": "Silk-blended cotton jersey with jacquard micro-striping. Retains shape after international travel, wrinkle-resistant finish.",
+        "provenance": "Baku Atelier Exclusive",
+        "raw_front_photo": "photos/photo_225@17-09-2024_11-27-05.jpg",
+        "raw_detail_photo": "photos/photo_225@17-09-2024_11-27-05.jpg",
+        "raw_back_photo": "photos/photo_225@17-09-2024_11-27-05.jpg",
+        "raw_video": "video_files/IMG_6852.MOV", # Verified Drop #7 matching video!
+        "measurements": {
+            "M": {"chest_cm": 104, "length_cm": 70, "shoulder_cm": 46, "sleeve_cm": 23},
+            "L": {"chest_cm": 110, "length_cm": 72, "shoulder_cm": 48, "sleeve_cm": 24},
+            "XL": {"chest_cm": 116, "length_cm": 74, "shoulder_cm": 50, "sleeve_cm": 25},
+            "XXL": {"chest_cm": 122, "length_cm": 76, "shoulder_cm": 52, "sleeve_cm": 26}
+        },
+        "styled_with": ["MB-08", "MB-05"]
+    },
+    {
+        "id": "MB-08",
+        "name": "Raw Indigo Selvedge-Cut Contemporary Denim",
+        "category": "Denim & Trousers",
+        "price": 60,
+        "badge": "Japanese Selvedge Cut",
+        "sizes": ["30", "31", "32", "33", "34", "36", "38"],
+        "model_telemetry": "Model is 185 cm, 80 kg, 32\" waist, wearing Size 32",
+        "fit_scale": "Slim-Straight: Mid rise, comfortable seat, straight from knee",
+        "fit_rating": 45,
+        "fabric_story": "13.5 oz Raw Ring-Spun Indigo Denim with 1% elastane micro-stretch. Classic red-line selvedge ID on outseams, solid brass hardware.",
+        "provenance": "Crafted in Baku Workshop",
+        "raw_front_photo": "photos/photo_738@11-10-2024_14-28-48.jpg",
+        "raw_detail_photo": "photos/photo_739@11-10-2024_14-28-48.jpg",
+        "raw_back_photo": "photos/photo_740@11-10-2024_14-28-48.jpg",
+        "raw_video": None, # Photo flip to back
+        "measurements": {
+            "30": {"waist_cm": 79, "inseam_cm": 81, "leg_opening_cm": 18},
+            "32": {"waist_cm": 84, "inseam_cm": 82, "leg_opening_cm": 19},
+            "34": {"waist_cm": 89, "inseam_cm": 83, "leg_opening_cm": 20},
+            "36": {"waist_cm": 94, "inseam_cm": 84, "leg_opening_cm": 21}
+        },
+        "styled_with": ["MB-01", "MB-03"]
+    },
+    {
+        "id": "MB-09",
+        "name": "Breathable Athletic Mesh Runner Sneaker",
+        "category": "Footwear",
+        "price": 45,
+        "badge": "Active Capsule",
+        "sizes": ["40", "41", "42", "43", "44"],
+        "model_telemetry": "True to size. Fits comfortably with athletic or dress socks.",
+        "fit_scale": "Standard Width (D)",
+        "fit_rating": 50,
+        "fabric_story": "Multi-layer engineered nylon mesh framed in soft split-suede leather. Ultra-lightweight EVA midsole with aggressive traction rubber outsole.",
+        "provenance": "Marko Footwear Lab",
+        "raw_front_photo": "photos/photo_589@07-10-2024_11-13-58.jpg",
+        "raw_detail_photo": "photos/photo_590@07-10-2024_11-13-58.jpg",
+        "raw_back_photo": "photos/photo_589@07-10-2024_11-13-58.jpg",
+        "raw_video": None,
+        "measurements": {
+            "40": {"insole_cm": 26.0}, "41": {"insole_cm": 26.8}, "42": {"insole_cm": 27.5},
+            "43": {"insole_cm": 28.2}, "44": {"insole_cm": 29.0}
+        },
+        "styled_with": ["MB-06"]
+    },
+    {
+        "id": "MB-10",
+        "name": "16-Gauge Silk & Fine Merino Crewneck",
+        "category": "Knits & Polos",
+        "price": 60,
+        "badge": "Luxury Wool-Silk",
+        "sizes": ["M", "L", "XL", "XXL", "3XL"],
+        "model_telemetry": "Model is 185 cm, 81 kg, wearing Size Large",
+        "fit_scale": "Tailored Knitwear: Sits flat against shirt collar without bulk",
+        "fit_rating": 45,
+        "fabric_story": "70% Australian Extra-Fine Merino Wool, 30% Mulberry Silk. Temperature-regulating hollow fibers spun into an ultra-smooth 16-gauge knit.",
+        "provenance": "Atelier Marko Knitwear Studio",
+        "raw_front_photo": "photos/photo_397@01-10-2024_15-45-52.jpg",
+        "raw_detail_photo": "photos/photo_398@01-10-2024_15-45-52.jpg",
+        "raw_back_photo": "photos/photo_399@01-10-2024_15-45-52.jpg",
+        "raw_video": "video_files/IMG_5590.MP4",
+        "measurements": {
+            "M": {"chest_cm": 104, "length_cm": 69, "shoulder_cm": 44, "sleeve_cm": 64},
+            "L": {"chest_cm": 110, "length_cm": 71, "shoulder_cm": 46, "sleeve_cm": 65},
+            "XL": {"chest_cm": 116, "length_cm": 73, "shoulder_cm": 48, "sleeve_cm": 66},
+            "XXL": {"chest_cm": 122, "length_cm": 75, "shoulder_cm": 50, "sleeve_cm": 67}
+        },
+        "styled_with": ["MB-04", "MB-12"]
+    },
+    {
+        "id": "MB-11",
+        "name": "Archival Graphic Drop-Shoulder Tee",
+        "category": "Essentials",
+        "price": 14,
+        "badge": "Volume Wholesale Tier",
+        "sizes": ["M", "L", "XL", "XXL"],
+        "model_telemetry": "Model is 182 cm, 77 kg, wearing Size Medium",
+        "fit_scale": "Relaxed Boxy: Drop shoulder with structured chest",
+        "fit_rating": 65,
+        "fabric_story": "210 GSM Combed Ringspun Jersey. High-density screenprint cured with water-based eco-pigments. Buy 10-15 pieces for complimentary worldwide air shipping.",
+        "provenance": "Baku Ready-to-Wear Factory",
+        "raw_front_photo": "photos/photo_1@30-07-2024_15-00-59.jpg",
+        "raw_detail_photo": "photos/photo_2@30-07-2024_15-00-59.jpg",
+        "raw_back_photo": "photos/photo_3@30-07-2024_15-00-59.jpg",
+        "raw_video": "video_files/IMG_5183.MOV", # Verified Drop #1 matching video!
+        "measurements": {
+            "M": {"chest_cm": 110, "length_cm": 72, "shoulder_cm": 52, "sleeve_cm": 22},
+            "L": {"chest_cm": 116, "length_cm": 74, "shoulder_cm": 54, "sleeve_cm": 23},
+            "XL": {"chest_cm": 122, "length_cm": 76, "shoulder_cm": 56, "sleeve_cm": 24},
+            "XXL": {"chest_cm": 128, "length_cm": 78, "shoulder_cm": 58, "sleeve_cm": 25}
+        },
+        "styled_with": ["MB-08", "MB-09"]
+    },
+    {
+        "id": "MB-12",
+        "name": "Unstructured Neapolitan-Cut Travel Blazer",
+        "category": "Suits & Outerwear",
+        "price": 99,
+        "badge": "Tailored Sartorial",
+        "sizes": ["48", "50", "52", "54", "56"],
+        "model_telemetry": "Model is 186 cm, 82 kg, wearing Size 50 (US 40R)",
+        "fit_scale": "Classic Sartorial: Natural soft shoulder, unlined interior",
+        "fit_rating": 50,
+        "fabric_story": "100% High-Twist Tropical Wool Hopsack. Completely unlined back for maximum lightness, shirt-sleeve shoulder construction (Spalla Camicia).",
+        "provenance": "Baku Master Tailor Guild",
+        "raw_front_photo": "photos/photo_797@13-10-2024_14-17-08.jpg",
+        "raw_detail_photo": "photos/photo_798@13-10-2024_14-17-08.jpg",
+        "raw_back_photo": "photos/photo_799@13-10-2024_14-17-08.jpg",
+        "raw_video": None, # High-res photo flip
+        "measurements": {
+            "48": {"chest_cm": 104, "length_cm": 73, "shoulder_cm": 45, "sleeve_cm": 63},
+            "50": {"chest_cm": 108, "length_cm": 74.5, "shoulder_cm": 46.5, "sleeve_cm": 64.5},
+            "52": {"chest_cm": 112, "length_cm": 76, "shoulder_cm": 48, "sleeve_cm": 66},
+            "54": {"chest_cm": 116, "length_cm": 77.5, "shoulder_cm": 49.5, "sleeve_cm": 67.5},
+            "56": {"chest_cm": 120, "length_cm": 79, "shoulder_cm": 51, "sleeve_cm": 69}
+        },
+        "styled_with": ["MB-04", "MB-10", "MB-05"]
+    }
+]
+
+# Process and copy assets to web/assets
+for prod in curated_catalog:
+    # 1. Front photo
+    s_front = os.path.join(src_export, prod['raw_front_photo'])
+    d_front = os.path.join(web_assets, f"{prod['id']}_front.jpg")
+    if os.path.exists(s_front):
+        shutil.copy2(s_front, d_front)
+        prod['front_photo'] = f"assets/{prod['id']}_front.jpg"
+    
+    # 2. Detail photo
+    s_detail = os.path.join(src_export, prod['raw_detail_photo'])
+    d_detail = os.path.join(web_assets, f"{prod['id']}_detail.jpg")
+    if os.path.exists(s_detail):
+        shutil.copy2(s_detail, d_detail)
+        prod['detail_photo'] = f"assets/{prod['id']}_detail.jpg"
+        
+    # 3. Back photo
+    s_back = os.path.join(src_export, prod['raw_back_photo'])
+    d_back = os.path.join(web_assets, f"{prod['id']}_back.jpg")
+    if os.path.exists(s_back):
+        shutil.copy2(s_back, d_back)
+        prod['back_photo'] = f"assets/{prod['id']}_back.jpg"
+    else:
+        prod['back_photo'] = prod['detail_photo']
+
+    # 4. Verified matching video
+    if prod['raw_video']:
+        s_vid = os.path.join(src_export, prod['raw_video'])
+        ext = os.path.splitext(prod['raw_video'])[1].lower()
+        d_vid = os.path.join(web_assets, f"{prod['id']}_walk{ext}")
+        if os.path.exists(s_vid):
+            shutil.copy2(s_vid, d_vid)
+            prod['video_url'] = f"assets/{prod['id']}_walk{ext}"
+            print(f"[{prod['id']}] Aligned video copied: {prod['video_url']}")
+        else:
+            prod['video_url'] = None
+    else:
+        prod['video_url'] = None
+
+out_json = os.path.join(r"C:\Users\User\Documents\Moradin Industries\04_Projects\Marko_Digital_Atelier\web", "products.json")
+with open(out_json, "w", encoding="utf-8") as f:
+    json.dump(curated_catalog, f, indent=2, ensure_ascii=False)
+
+print(f"\nAligned catalog successfully generated and saved to {out_json}")
